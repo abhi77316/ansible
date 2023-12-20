@@ -1,0 +1,8 @@
+#creating congigure.yml
+#location /role/tasks/configure.yml
+
+---
+- name: Copy index.html
+  copy:
+    src: "{{ role_path }}/files/index.html"
+    dest: /var/www/html/index.html

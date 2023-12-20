@@ -1,0 +1,10 @@
+
+# tasks file for role1
+#Creating main.yml
+#location /role/tasks/main.yl
+---
+
+# tasks file for role1
+- include: install.yml
+- include: configure.yml
+- include: service.yml

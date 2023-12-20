@@ -1,0 +1,6 @@
+---
+- hosts: [cluster1]
+  name: play1
+  become: true
+  roles:
+      - role1
