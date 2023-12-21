@@ -1,0 +1,7 @@
+---
+# handlers file for role2
+handlers:
+  - name: Reload Nginx
+    service:
+      name: nginx
+      state: reloaded

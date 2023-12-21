@@ -1,0 +1,9 @@
+---
+- name: Install nginx
+  apt:
+    name: nginx
+    update_cache: yes
+    state: present
+- name: send post installation message
+  debug:
+    msg: "post installation message your installation is complete"

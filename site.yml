@@ -1,6 +1,12 @@
 ---
-- hosts: [cluster1]
+- hosts: [apache2]
   name: play1
   become: true
   roles:
       - role1
+
+- hosts: [nginx]
+  name: play2
+  become: true
+  roles:
+      - role2

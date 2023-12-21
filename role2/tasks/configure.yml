@@ -1,0 +1,6 @@
+---
+- name: Copy hello.html
+  copy:
+    src: "{{ role_path }}/files/hello.html"
+    dest: /var/www/html/hello.html
+  notify: Reload Nginx
