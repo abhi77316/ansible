@@ -1,6 +1,4 @@
 ---
-# tasks file for role2
-# tasks file for role1
 - include: install.yml
 - include: configure.yml
 - include: service.yml

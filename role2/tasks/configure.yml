@@ -1,6 +1,6 @@
 ---
-- name: Copy hello.html
+- name: copy index.html
   copy:
-    src: "{{ role_path }}/files/hello.html"
-    dest: /var/www/html/hello.html
+    src: "{{role_path}}/files/index.html"
+    dest: /var/www/html/index.html
   notify: Reload Nginx
